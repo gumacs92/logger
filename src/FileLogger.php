@@ -53,7 +53,7 @@ class FileLogger extends AbstractLogger
         }
 
         if (!$this->options['path']) {
-            $this->options['path'] = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'logs';
+            $this->options['path'] = getcwd() . DIRECTORY_SEPARATOR . 'logs';
         }
     }
 
