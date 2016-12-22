@@ -1,0 +1,5 @@
+[2016-12-21 23:21:07.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-21 23:21:20.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-21 23:22:13.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-21 23:22:26.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-21 23:27:15.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  

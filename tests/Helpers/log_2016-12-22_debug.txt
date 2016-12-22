@@ -1,0 +1,7 @@
+[2016-12-22 07:17:17.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:17:27.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:20:00.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:20:58.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:22:24.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:22:50.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
+[2016-12-22 07:22:53.000000] -- Log level: debug -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  

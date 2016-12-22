@@ -1,0 +1,1 @@
+[2016-12-22 07:24:52.000000] -- Log level: warning -- Message: message logtest1 logtest2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 30 with code 0:  
