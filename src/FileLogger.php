@@ -32,7 +32,8 @@ class FileLogger extends AbstractLogger
     );
 
     protected $options = [
-        'defaultPath' => '',
+        'path' => false,
+        'fileName' => '',
         'fileNameFormat' => false,
         'prefix' => 'log_',
         'fileDateFormat' => 'Y-m-d',
@@ -43,15 +44,23 @@ class FileLogger extends AbstractLogger
         'logFormat' => false,
     ];
 
-    public function __construct($path, $threshold, $options = [])
+    public function __construct($threshold, $options = [])
     {
         $this->threshold = $this->logLevels[$threshold];
-        $this->path = $path;
-
-        $this->options['defaultPath'] = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'logs';
 
         foreach ($options as $k => $v) {
-            $options[$k] = $v;
+            $this->options[$k] = $v;
+        }
+
+        if (!$this->options['path']) {
+            $this->options['path'] = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'logs';
+        }
+    }
+
+    public function setOptions($options = [])
+    {
+        foreach ($options as $k => $v) {
+            $this->options[$k] = $v;
         }
     }
 
@@ -103,19 +112,19 @@ class FileLogger extends AbstractLogger
             return;
         }
 
-        $file_name = $this->generateFilename();
+        $this->options['fileName'] = $this->generateFilename();
 
-        $this->write($file_name, $message, $context);
+        $this->write($message, $context);
     }
 
-    public function write($file_name, $message, $context)
+    public function write($message, $context)
     {
         $message = $this->replacePlaceholders($message, $context);
 
         //TODO logformat part
         $messagerow = $this->createLogRow($message);
 
-        $file = $this->path . DIRECTORY_SEPARATOR . $file_name;
+        $file = $this->options['path'] . DIRECTORY_SEPARATOR . $this->options['fileName'];
         file_put_contents($file, $messagerow, FILE_APPEND);
     }
 

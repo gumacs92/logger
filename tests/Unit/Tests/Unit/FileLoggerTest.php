@@ -21,9 +21,9 @@ class FileLoggerTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->logger = new FileLogger(getcwd() .
+        $this->logger = new FileLogger(LogLevel::DEBUG, ['path' => getcwd() .
             DIRECTORY_SEPARATOR . 'tests' .
-            DIRECTORY_SEPARATOR . 'helpers', LogLevel::DEBUG);
+            DIRECTORY_SEPARATOR . 'helpers']);
     }
 
     public function testLog(){
@@ -48,8 +48,9 @@ class FileLoggerTest extends \PHPUnit_Framework_TestCase
     {
         $e = new \Exception();
         $file_name = $this->logger->generateFilename();
+        $this->logger->setOptions(['fileName' => $file_name]);
 
-        $this->logger->write($file_name, "message {alma} {korte} {exception}", ["alma" => 'value1', "korte" => "value2", "exception" => $e]);
+        $this->logger->write("message {alma} {korte} {exception}", ["alma" => 'value1', "korte" => "value2", "exception" => $e]);
 
         $file = getcwd() .
             DIRECTORY_SEPARATOR . 'tests' .

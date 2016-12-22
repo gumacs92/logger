@@ -8,3 +8,5 @@
 [2016-12-22 07:22:24.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 49 with code 0:  
 [2016-12-22 07:22:50.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 49 with code 0:  
 [2016-12-22 07:24:52.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 49 with code 0:  
+[2016-12-22 07:43:55.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 49 with code 0:  
+[2016-12-22 07:44:16.000000] -- Log level: info -- Message: message value1 value2 Exception found at D:\Development\PhpstormProjects\logger\tests\Unit\Tests\Unit\FileLoggerTest.php 49 with code 0:  
